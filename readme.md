@@ -4,4 +4,5 @@
 * JDK 21
 * Apache Tomcat 10.1
 * Servlet Technology
-* Http Session
+* Application Scope
+* Session Scope 
