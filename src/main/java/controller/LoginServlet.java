@@ -54,7 +54,7 @@ public class LoginServlet extends HttpServlet {
 				if(tempUsr.getEmail().equals(email) && tempUsr.getPassword().equals(password))
 				{
 					request.getSession().setAttribute("user", tempUsr);
-					request.getRequestDispatcher("WelcomeServlet").forward(request, response);
+					request.getRequestDispatcher("welcome.html").forward(request, response);
 				}
 			}
 		}

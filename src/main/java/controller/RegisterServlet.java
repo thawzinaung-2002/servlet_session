@@ -17,7 +17,9 @@ import java.util.Iterator;
  */
 public class RegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+     
+	ArrayList<User> usr = new ArrayList<>();
+	
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -62,7 +64,6 @@ public class RegisterServlet extends HttpServlet {
 				{
 					User user = new User(name, email, password);
 					
-					ArrayList<User> usr = new ArrayList<>();
 					usr.add(user);
 					
 					request.getServletContext().setAttribute("users", usr);
